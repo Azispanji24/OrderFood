@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">orderFood</string>
+
+    <string name="text_intro">Halo, pilih makanan favoritmu:</string>
+    <string name="donuts">Combro adalah makanan dari singkong isi oncom</string>
+    <string name="ice_cream_sandwiches">Misro adalah makanan dari singkong isi gula merah</string>
+    <string name="froyo">Gehu adalah gorengan isi tauge</string>
+
+</resources>

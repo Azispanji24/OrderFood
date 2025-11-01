@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Konten utama + scroll -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Bottom Navigation -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Judul -->
+                <TextView
+                    android:id="@+id/textview_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih makanan favoritmu!"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- List makanan dan deskripsi -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="16dp"
+                    >
+
+                    <!-- Donut -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_donut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/donut"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/donut_circle"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/donut_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Donut - Makanan manis berbentuk cincin"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Ice Cream -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_ice_cream"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ice_cream"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/icecream_circle"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/ice_cream_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Ice Cream - Es lembut dengan berbagai rasa"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Froyo -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_froyo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/froyo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/froyo_circle"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/froyo_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Froyo - Yogurt beku yang menyegarkan"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Bubur Ayam -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_bubur_ayam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/bubur_ayam"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/bubur"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/bubur_ayam_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Bubur Ayam - Bubur nasi dengan ayam suwir"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Pizza -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/pizza"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pizza"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/pizza_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Pizza - Hidangan Italia dengan berbagai topping"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Burger -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_burger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/burger"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/burger"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/burger_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Burger - Roti isi daging dan sayuran"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Sushi -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_sushi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/sushi"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/sushi"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/sushi_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Sushi - Nasi dengan lauk ikan dan rumput laut"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Pasta -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/pasta"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pasta"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/pasta_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Pasta - Mie Italia dengan saus kaya rasa"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Salad -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_salad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:strokeColor="#D3D3D3"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/salad"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/salad"
+                                app:civ_border_color="@android:color/darker_gray"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/salad_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="Salad - Campuran sayuran segar"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+
+    <!-- Tombol Lanjut Mengambang -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"
+        android:elevation="8dp"
+        android:layout_gravity="bottom|end"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:stateListAnimator="@null" />
+</FrameLayout>

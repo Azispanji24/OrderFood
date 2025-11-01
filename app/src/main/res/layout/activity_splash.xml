@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+
+    <!-- ImageView untuk logo di atas teks -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:src="@drawable/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- TextView untuk teks "Mesen Makanan" -->
+
+
+    <!-- Button untuk lanjut ke halaman berikutnya -->
+    <Button
+        android:id="@+id/btnStart"
+        android:text="Start Now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        />
+
+</LinearLayout>

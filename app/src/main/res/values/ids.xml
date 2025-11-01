@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="donut" type="id" />
+    <item name="ice_cream" type="id" />
+    <item name="froyo" type="id" />
+    <item name="card_donut" type="id" />
+    <item name="card_ice_cream" type="id" />
+    <item name="card_bubur_ayam" type="id" />
+    <item name="card_froyo" type="id" />
+    <item name="card_pizza" type="id" />
+    <item name="card_burger" type="id" />
+    <item name="card_sushi" type="id" />
+    <item name="card_pasta" type="id" />
+    <item name="card_salad" type="id" />
+    <item name="ivMakanan" type="id" />
+</resources>
