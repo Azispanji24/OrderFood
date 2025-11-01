@@ -1,4 +1,4 @@
-###OrderFood App
+OrderFood App
 Aplikasi Android sederhana bertema Order Food 🍔🍕 yang memungkinkan pengguna memilih makanan favorit, melihat detail pesanan, mengisi alamat, dan melakukan konfirmasi.
 Project ini dibuat menggunakan Kotlin, XML Layout, dan Android Studio, dengan navigasi berbasis BottomNavigationView dan Intent antar Activity.
 
