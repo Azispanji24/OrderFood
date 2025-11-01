@@ -20,15 +20,15 @@ Aplikasi ini dibuat menggunakan Kotlin dan Android Studio, dengan desain sederha
 7. Toast interaktif saat memilih makanan atau menekan tombol navigasi
 
 ## Struktur Navigasi
-Activity	                  Deskripsi Singkat
-1. SplashActivity	          Menampilkan logo awal aplikasi sebelum masuk ke login
-2. LoginActivity	          Pengguna memasukkan nama untuk melanjutkan ke beranda
-3. HomeActivity	            Menampilkan daftar makanan favorit dalam bentuk card
-4. OrderActivity	          Menampilkan makanan yang dipilih beserta gambar dan tombol kirim
-5. AddressActivity	        Pengguna mengisi alamat pengiriman makanan
-6. ConfirmationActivity	    Menampilkan konfirmasi bahwa pesanan sedang diproses
-7. ProfileActivity	        Menampilkan profil atau data pengguna
-8. BottomNavigation	        Navigasi bawah untuk berpindah antar halaman utama (Home, Order, Profile)
+Activity	                  - Deskripsi Singkat
+1. SplashActivity	         - Menampilkan logo awal aplikasi sebelum masuk ke login
+2. LoginActivity	         - Pengguna memasukkan nama untuk melanjutkan ke beranda
+3. HomeActivity	         - Menampilkan daftar makanan favorit dalam bentuk card
+4. OrderActivity	         - Menampilkan makanan yang dipilih beserta gambar dan tombol kirim
+5. AddressActivity	      - Pengguna mengisi alamat pengiriman makanan
+6. ConfirmationActivity	   - Menampilkan konfirmasi bahwa pesanan sedang diproses
+7. ProfileActivity	      - Menampilkan profil atau data pengguna
+8. BottomNavigation	      - Navigasi bawah untuk berpindah antar halaman utama (Home, Order, Profile)
    
 ## Tampilan Aplikasi
 1. Splash Screen
