@@ -1,126 +1,96 @@
-OrderFood App
-Aplikasi Android sederhana bertema Order Food 🍔🍕 yang memungkinkan pengguna memilih makanan favorit, melihat detail pesanan, mengisi alamat, dan melakukan konfirmasi.
-Project ini dibuat menggunakan Kotlin, XML Layout, dan Android Studio, dengan navigasi berbasis BottomNavigationView dan Intent antar Activity.
+### OrderFood App
 
-🧩 Fitur Utama
+Aplikasi OrderFood adalah aplikasi sederhana berbasis Android yang memungkinkan pengguna memilih makanan favorit, melihat detail pesanan, mengisi alamat, hingga melakukan konfirmasi pesanan.
+Aplikasi ini dibuat menggunakan Kotlin dan Android Studio, dengan desain sederhana serta navigasi menggunakan Bottom Navigation View.
 
-Pilih makanan favorit dari daftar menu 🍩🍦🍣
+✨ Fitur Utama
 
-Lihat detail pesanan beserta gambar makanan
+Login dan input nama pengguna
 
-Isi alamat pengiriman sebelum konfirmasi
+Menampilkan daftar makanan dengan gambar dan nama
 
-Navigasi bawah (Home, Order, Profile) di setiap layar
+Menampilkan detail pesanan setelah memilih makanan
 
-Desain responsif dan tampilan bersih menggunakan ConstraintLayout & ScrollView
+Mengirim pesanan dengan memasukkan alamat
 
-🧠 Teknologi yang Digunakan
-Komponen	Deskripsi
-Bahasa Pemrograman	Kotlin
-UI Layout	XML (ConstraintLayout, LinearLayout, ScrollView)
-Navigasi	BottomNavigationView
-Library Tambahan	de.hdodenhof:circleimageview untuk gambar berbentuk lingkaran
-IDE	Android Studio Iguana atau lebih baru
-🏗️ Struktur Activity (8 Screen)
-1️⃣ SplashActivity
+Konfirmasi pesanan dan tampilan ucapan terima kasih
 
-Menampilkan logo dan nama aplikasi saat pertama kali dibuka.
+Navigasi bawah (Home, Order, Profile)
 
+Toast interaktif saat memilih makanan atau menekan tombol navigasi
 
-2️⃣ LoginActivity
+🧭 Struktur Navigasi
+Activity	Deskripsi Singkat
+1. SplashActivity	Menampilkan logo awal aplikasi sebelum masuk ke login
+2. LoginActivity	Pengguna memasukkan nama untuk melanjutkan ke beranda
+3. HomeActivity	Menampilkan daftar makanan favorit dalam bentuk card
+4. OrderActivity	Menampilkan makanan yang dipilih beserta gambar dan tombol kirim
+5. AddressActivity	Pengguna mengisi alamat pengiriman makanan
+6. ConfirmationActivity	Menampilkan konfirmasi bahwa pesanan sedang diproses
+7. ProfileActivity	Menampilkan profil atau data pengguna
+8. BottomNavigation	Navigasi bawah untuk berpindah antar halaman utama (Home, Order, Profile)
+🖼️ Tampilan Aplikasi
+1. Splash Screen
 
-User memasukkan username untuk masuk ke aplikasi.
+2. Login Screen
 
+3. Home Screen
 
-3️⃣ HomeActivity
-
-Menampilkan daftar makanan dengan gambar dan deskripsi.
-Pengguna bisa memilih salah satu makanan, lalu menekan tombol Lanjut (melayang di kanan bawah) untuk memesan.
-
-
-4️⃣ OrderActivity
-
-Menampilkan pesanan pengguna (nama dan gambar makanan yang dipilih).
-Tersedia tombol Kirim untuk lanjut ke halaman pengisian alamat.
+Menampilkan daftar makanan favorit dengan gambar dan tombol “Pesan”.
 
 
-5️⃣ AddressActivity
+4. Order Screen
 
-User mengisi alamat lengkap untuk pengiriman pesanan.
-Setelah itu menekan tombol Konfirmasi.
-
-
-6️⃣ ConfirmationActivity
-
-Menampilkan ringkasan pesanan (nama user, makanan, dan alamat).
-Berfungsi sebagai halaman konfirmasi akhir sebelum pesanan dikirim.
+Menampilkan detail makanan yang dipilih dan tombol “Kirim”.
 
 
-7️⃣ ProfileActivity
+5. Address Screen
 
-Menampilkan profil sederhana user (nama, dan mungkin informasi akun).
-
-
-8️⃣ SuccessActivity
-
-Menampilkan pesan sukses setelah pesanan dikirim.
-Biasanya berisi animasi atau ikon centang ✅.
+Form untuk memasukkan alamat pengiriman.
 
 
-⚙️ Cara Menjalankan
+6. Confirmation Screen
 
-Clone repository ini
-
-git clone https://github.com/username/orderfood-app.git
+Menampilkan pesan konfirmasi bahwa pesanan dikirim.
 
 
-Buka di Android Studio
+7. Profile Screen
 
-Jalankan di Emulator atau Perangkat Fisik
+Menampilkan profil pengguna.
 
-Pastikan Gradle dan SDK sudah terupdate
 
-🧾 Struktur Folder Utama
-app/
- ├─ java/lat/pam/orderfood/
- │   ├─ SplashActivity.kt
- │   ├─ LoginActivity.kt
- │   ├─ HomeActivity.kt
- │   ├─ OrderActivity.kt
- │   ├─ AddressActivity.kt
- │   ├─ ConfirmationActivity.kt
- │   ├─ ProfileActivity.kt
- │   └─ SuccessActivity.kt
- │
- ├─ res/
- │   ├─ layout/
- │   │   ├─ activity_home.xml
- │   │   ├─ activity_order.xml
- │   │   ├─ activity_address.xml
- │   │   ├─ activity_confirmation.xml
- │   │   ├─ activity_profile.xml
- │   │   ├─ activity_success.xml
- │   │   └─ activity_login.xml
- │   └─ drawable/
- │       ├─ donut_circle.png
- │       ├─ burger.png
- │       ├─ pizza.png
- │       └─ lainnya...
- │
- ├─ AndroidManifest.xml
- └─ build.gradle
+8. Bottom Navigation
 
-🧑‍🎨 Preview Tampilan
+Navigasi bawah dengan tombol Home, Order, dan Profile.
 
-Berikut contoh tampilan dari beberapa activity (ganti dengan tangkapan layar milikmu)
 
-Home	Order	Confirmation
+🛠️ Teknologi yang Digunakan
 
-	
-	
-🧑‍💻 Pengembang
+Kotlin (Android)
+
+Android Studio
+
+Material Design Components
+
+BottomNavigationView
+
+Intent & Toast
+
+LinearLayout, ConstraintLayout, dan CardView
+
+🚀 Cara Menjalankan
+
+Clone repository ini:
+
+git clone https://github.com/username/orderfood.git
+
+
+Buka project di Android Studio
+
+Jalankan dengan Emulator atau perangkat Android
+
+👨‍💻 Pengembang
 
 Nama: Al Khawarizmi
-Kampus: UIN Bandung – Informatika
-Semester: 4
-Deskripsi: Mahasiswa yang tertarik pada pengembangan front-end dan desain UI modern ✨
+Universitas: UIN Bandung
+Jurusan: Teknik Informatika
