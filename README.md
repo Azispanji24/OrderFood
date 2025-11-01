@@ -86,7 +86,7 @@ Activity	                  - Deskripsi Singkat
 
 1. Clone repository ini:
 
-  git clone https://github.com/username/orderfood.git
+ git clone https://github.com/Azispanji24/OrderFood.git
 
 
 2. Buka project di Android Studio
