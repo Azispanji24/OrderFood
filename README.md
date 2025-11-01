@@ -31,35 +31,35 @@ Activity	                  - Deskripsi Singkat
 8. BottomNavigation	      - Navigasi bawah untuk berpindah antar halaman utama (Home, Order, Profile)
    
 ## Tampilan Aplikasi
-1. Splash Screen
-![Splash Screen](https://github.com/user-attachments/assets/4048d9d8-7368-4630-b805-1df3eebcc4e4)
 
-2. Welcome Screen
-![Welcome Screen](https://github.com/user-attachments/assets/9aad869a-e131-4ac9-9560-efe888e26f5f)
+1. Splash Screen  
+   <img src="https://github.com/user-attachments/assets/4048d9d8-7368-4630-b805-1df3eebcc4e4" width="300" />
 
-3. Login Screen
-![Login Screen](https://github.com/user-attachments/assets/cc1200ca-61f0-4ddd-a578-bc3279645e55)
+2. Welcome Screen  
+   <img src="https://github.com/user-attachments/assets/9aad869a-e131-4ac9-9560-efe888e26f5f" width="300" />
 
-5. Register Screen
-![Register Screen](https://github.com/user-attachments/assets/2cda2d94-c46a-4f68-a31e-f5c8bf867b8f)
+3. Login Screen  
+   <img src="https://github.com/user-attachments/assets/cc1200ca-61f0-4ddd-a578-bc3279645e55" width="300" />
+
+4. Register Screen  
+   <img src="https://github.com/user-attachments/assets/2cda2d94-c46a-4f68-a31e-f5c8bf867b8f" width="300" />
    
-6. Home Screen
-Menampilkan daftar makanan favorit dengan gambar dan tombol “Pesan”.
-![Home Screen](https://github.com/user-attachments/assets/7f42aff3-92ca-4b34-85fe-2563a258a6dc)
+5. Home Screen  
+   Menampilkan daftar makanan favorit dengan gambar dan tombol “Pesan”.  
+   <img src="https://github.com/user-attachments/assets/7f42aff3-92ca-4b34-85fe-2563a258a6dc" width="300" />
 
-6. Order Screen
-Menampilkan detail makanan yang dipilih dan tombol “Kirim”.
-![Order Screen](https://github.com/user-attachments/assets/3de7c52f-4097-42f6-a664-cf6d71485171)
+6. Order Screen  
+   Menampilkan detail makanan yang dipilih dan tombol “Kirim”.  
+   <img src="https://github.com/user-attachments/assets/3de7c52f-4097-42f6-a664-cf6d71485171" width="300" />
 
+7. Address Screen  
+   Form untuk memasukkan alamat pengiriman.  
+   <img src="https://github.com/user-attachments/assets/6ee2d709-717d-4491-a6e5-296149919972" width="300" />
 
-7. Address Screen
-Form untuk memasukkan alamat pengiriman.
-![Adress Screen](https://github.com/user-attachments/assets/6ee2d709-717d-4491-a6e5-296149919972)
+8. Confirmation Screen  
+   Menampilkan pesan konfirmasi bahwa pesanan dikirim.  
+   <img src="https://github.com/user-attachments/assets/8dbff445-7d34-4f29-ba37-31c95ebb6b42" width="300" />
 
-
-8. Confirmation Screen
-Menampilkan pesan konfirmasi bahwa pesanan dikirim.
-![Confirmation Screen](https://github.com/user-attachments/assets/8dbff445-7d34-4f29-ba37-31c95ebb6b42)
 
 
 
